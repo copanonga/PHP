@@ -2,7 +2,18 @@
 
 ## Índice de contenidos
 
+- [Crear objeto](#crear-objeto)
 - [Explode](#Explode)
+
+## Crear objeto
+
+```
+
+$objetoCreado = new stdClass();
+$objetoCreado->id = $valor->id;
+$objetoCreado->nombre = $valor->nombre;
+
+```
 
 ## Explode
 
