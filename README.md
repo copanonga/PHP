@@ -7,9 +7,11 @@
 ## Explode
 
 ```
-datos: 12|23|34|
+Datos de entrada en cadena de texto: 12|23|34|
 
 $datos = substr($datos, 0, -1);
 $datosObtenidos = explode("|", $datos);
+
+Array obtenido: 12,23,34
 
 ```
