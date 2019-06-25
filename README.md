@@ -5,15 +5,14 @@
 - [Crear objeto](#crear-objeto)
 - [Explode](#Explode)
 - [Quitar tildes a una cadena](#quitar-tildes-a-una-cadena)
+- [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
 
 ## Crear objeto
 
 ```
-
 $objetoCreado = new stdClass();
 $objetoCreado->id = $valor->id;
 $objetoCreado->nombre = $valor->nombre;
-
 ```
 
 ## Explode
@@ -25,8 +24,8 @@ $datos = substr($datos, 0, -1);
 $datosObtenidos = explode("|", $datos);
 
 Array obtenido: 12,23,34
-
 ```
+
 ## Quitar tildes a una cadena
 
 ```
@@ -41,5 +40,11 @@ private function quitar_tildes($cadena) {
     }
 
 $nuevaCadena = quitar_tildes($cadena);
+```
 
+## Eliminar etiquetas HTML de un string
+
+```
+$cadena="<p>El veloz <b>murciélago</b></p>";
+echo stript_tags($cadena);
 ```
