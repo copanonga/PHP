@@ -6,6 +6,7 @@
 - [Explode](#Explode)
 - [Quitar tildes a una cadena](#quitar-tildes-a-una-cadena)
 - [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
+- [Buscar texto](#buscar-texto)
 
 ## Crear objeto
 
@@ -48,3 +49,16 @@ $nuevaCadena = quitar_tildes($cadena);
 $cadena="<p>El veloz <b>murciélago</b></p>";
 echo stript_tags($cadena);
 ```
+
+## Buscar texto
+
+```
+$textoABuscar = 'veloz';
+$cadena = "El veloz murciélago hindú";
+$estaContenido = strpos($cadena, $textoABuscar);
+
+if ($estaContenido !== false) {
+   echo "La cadena contiene el texto a buscar";
+}
+```
+
