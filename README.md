@@ -7,6 +7,7 @@
 - [Quitar tildes a una cadena](#quitar-tildes-a-una-cadena)
 - [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
 - [Buscar texto](#buscar-texto)
+- [Comparar fechas](#comparar-fechas)
 
 ## Crear objeto
 
@@ -62,3 +63,17 @@ if ($estaContenido !== false) {
 }
 ```
 
+## Comparar fechas
+
+```
+$fechaAComparar = date_create('2009-10-11 19:10');
+$fechaTope = date_create('2009-10-11 19:23');
+
+if($fechaAComparar < $fechaTope) {
+        echo $fechaAComparar->format('d-m-Y H:i:s')." es menor que ".$fechaTope->format('d-m-Y H:i:s')."<br>";
+} else if($fechaAComparar == $fechaTope) {
+        echo $fechaAComparar->format('d-m-Y H:i:s')." es igual que ".$fechaTope->format('d-m-Y H:i:s');
+} else {
+        echo $fechaAComparar->format('d-m-Y H:i:s')." es mayor que ".$fechaTope->format('d-m-Y H:i:s');
+}
+```
