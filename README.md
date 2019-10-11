@@ -66,11 +66,11 @@ if ($estaContenido !== false) {
 ## Comparar fechas
 
 ```
-$fechaAComparar = date_create('2009-10-11 19:10');
-$fechaTope = date_create('2009-10-11 19:23');
+$fechaAComparar = date_create('2019-10-11 15:00');
+$fechaTope = date_create('2019-10-11 12:15');
 
 if($fechaAComparar < $fechaTope) {
-        echo $fechaAComparar->format('d-m-Y H:i:s')." es menor que ".$fechaTope->format('d-m-Y H:i:s')."<br>";
+        echo $fechaAComparar->format('d-m-Y H:i:s')." es menor que ".$fechaTope->format('d-m-Y H:i:s');
 } else if($fechaAComparar == $fechaTope) {
         echo $fechaAComparar->format('d-m-Y H:i:s')." es igual que ".$fechaTope->format('d-m-Y H:i:s');
 } else {
