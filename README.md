@@ -8,6 +8,7 @@
 - [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
 - [Buscar texto](#buscar-texto)
 - [Comparar fechas](#comparar-fechas)
+- [Obtener primer caracter](#obtener-primer-caracter)
 
 ## Crear objeto
 
@@ -76,4 +77,12 @@ if($fechaAComparar < $fechaTope) {
 } else {
         echo $fechaAComparar->format('d-m-Y H:i:s')." es mayor que ".$fechaTope->format('d-m-Y H:i:s');
 }
+```
+
+## Obtener primer caracter
+
+```
+$primerCaracter = $string[0];
+
+$primerCaracter = substr($string, 0, 1);
 ```
