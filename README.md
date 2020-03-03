@@ -9,6 +9,7 @@
 - [Buscar texto](#buscar-texto)
 - [Comparar fechas](#comparar-fechas)
 - [Obtener primer caracter](#obtener-primer-caracter)
+- [Eliminar último caracter](#eliminar-ultimo-caracter)
 
 ## Crear objeto
 
@@ -85,4 +86,10 @@ if($fechaAComparar < $fechaTope) {
 $primerCaracter = $string[0];
 
 $primerCaracter = substr($string, 0, 1);
+```
+
+## Eliminar último caracter
+
+```
+$string = substr($string, 0, -1);
 ```
